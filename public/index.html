@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forensics Tool Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- ページ全体のタイトル -->
+  <header class="page-header">
+    <h1>Forensics Tool Web</h1>
+    <p>
+      SSHログ解析とファイル解析を行うフォレンジックツールです。
+    </p>
+  </header>
+
+  <!-- 解析機能のコンテナ -->
+  <main class="container-grid">
+
+    <!-- SSHログ解析コンテナ -->
+    <section class="tool-card">
+      <h2>SSHログ解析</h2>
+
+      <p class="subtitle">
+        SSHログファイルをアップロードして解析します。
+      </p>
+
+      <form
+        action="/upload-log"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label class="file-label" for="logfile">
+          SSHログファイルを選択
+        </label>
+
+        <input
+          id="logfile"
+          type="file"
+          name="logfile"
+          required
+        >
+
+        <p id="logfile-status" class="selected-files">
+          ファイルが選択されていません
+        </p>
+
+        <button type="submit">
+          解析開始
+        </button>
+      </form>
+    </section>
+
+
+    <!-- ファイル解析コンテナ -->
+    <section class="tool-card">
+      <h2>ファイル解析</h2>
+
+      <p class="subtitle">
+        フォルダを選択して、ファイルのメタデータ・拡張子偽装を調査します。
+      </p>
+
+      <form
+        action="/upload-folder"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label class="file-label" for="folderfiles">
+          解析するフォルダを選択
+        </label>
+
+        <input
+          id="folderfiles"
+          type="file"
+          name="folderfiles"
+          webkitdirectory
+          directory
+          multiple
+          required
+        >
+
+        <p id="folderfiles-status" class="selected-files">
+          フォルダが選択されていません
+        </p>
+
+        <button type="submit">
+          解析開始
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <script>
+    // SSHログファイルの選択状態を表示
+    const logfileInput = document.getElementById("logfile");
+    const logfileStatus = document.getElementById("logfile-status");
+
+    logfileInput.addEventListener("change", () => {
+      if (logfileInput.files.length === 0) {
+        logfileStatus.textContent = "ファイルが選択されていません";
+        return;
+      }
+
+      logfileStatus.textContent =
+        `選択中: ${logfileInput.files[0].name}`;
+    });
+
+
+    // フォルダの選択状態を表示
+    const folderInput = document.getElementById("folderfiles");
+    const folderStatus = document.getElementById("folderfiles-status");
+
+    folderInput.addEventListener("change", () => {
+      if (folderInput.files.length === 0) {
+        folderStatus.textContent = "フォルダが選択されていません";
+        return;
+      }
+
+      const firstFile = folderInput.files[0];
+      const relativePath =
+        firstFile.webkitRelativePath || firstFile.name;
+
+      const folderName = relativePath.split("/")[0];
+
+      folderStatus.textContent =
+        `選択中: ${folderName}（${folderInput.files.length}個のファイル）`;
+    });
+  </script>
+</body>
+</html>

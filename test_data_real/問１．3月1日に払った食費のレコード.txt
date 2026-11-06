@@ -1,0 +1,31 @@
+問１．3月1日に払った食費のレコード
+SELECT *
+FROM 家計簿
+WHERE 日付 = '2024-03-01'
+  AND 費目 = '食費';
+
+問２．支出に関係のない（出金額がない）行
+SELECT *
+FROM 家計簿
+WHERE 出金額 IS NULL;
+
+問３．メモに「購入」を含む支払いデータ
+
+※「LIKE」を使うやつね！
+
+SELECT *
+FROM 家計簿
+WHERE メモ LIKE '%購入%';
+
+問４．住居費（家賃・電気代・水道代）をINで取り出す
+SELECT *
+FROM 家計簿
+WHERE 費目 IN ('家賃', '電気代', '水道代');
+
+問５．3月の行をBETWEENで取り出す
+
+※ BETWEEN は両端を含むよ！
+
+SELECT *
+FROM 家計簿
+WHERE 日付 BETWEEN '2024-03-01' AND '2024-03-31';

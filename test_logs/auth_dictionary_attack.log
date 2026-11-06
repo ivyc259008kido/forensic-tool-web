@@ -1,0 +1,60 @@
+2026-10-07T03:15:14.711356+00:00 target-ubuntu systemd-logind[1029]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-10-07T03:15:14.711362+00:00 target-ubuntu systemd-logind[1029]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-10-07T03:15:14.711366+00:00 target-ubuntu systemd-logind[1029]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-10-07T03:15:14.711368+00:00 target-ubuntu systemd-logind[1029]: New seat seat0.
+2026-10-07T03:17:10.676153+00:00 target-ubuntu sshd[1334]: Server listening on 0.0.0.0 port 22.
+2026-10-07T03:17:10.676247+00:00 target-ubuntu sshd[1334]: Server listening on :: port 22.
+2026-10-07T03:19:51.830565+00:00 target-ubuntu sshd-session[1350]: Invalid user admin from 192.168.100.20 port 51828
+2026-10-07T03:19:52.077575+00:00 target-ubuntu sshd-session[1350]: Received disconnect from 192.168.100.20 port 51828:11: Bye Bye [preauth]
+2026-10-07T03:19:52.077849+00:00 target-ubuntu sshd-session[1350]: Disconnected from invalid user admin 192.168.100.20 port 51828 [preauth]
+2026-10-07T03:19:57.934223+00:00 target-ubuntu sshd-session[1353]: Connection closed by 192.168.100.20 port 49024 [preauth]
+2026-10-07T03:19:57.941096+00:00 target-ubuntu sshd-session[1356]: Connection closed by 192.168.100.20 port 49052 [preauth]
+2026-10-07T03:19:57.968481+00:00 target-ubuntu sshd-session[1355]: Connection closed by 192.168.100.20 port 49050 [preauth]
+2026-10-07T03:19:57.983822+00:00 target-ubuntu sshd-session[1357]: Connection closed by 192.168.100.20 port 49068 [preauth]
+2026-10-07T03:19:57.986758+00:00 target-ubuntu sshd-session[1354]: Connection closed by 192.168.100.20 port 49040 [preauth]
+2026-10-07T03:20:47.811770+00:00 target-ubuntu sshd-session[1369]: Invalid user admin from 192.168.100.20 port 44062
+2026-10-07T03:20:47.891401+00:00 target-ubuntu sshd-session[1369]: Received disconnect from 192.168.100.20 port 44062:11: Bye Bye [preauth]
+2026-10-07T03:20:47.892478+00:00 target-ubuntu sshd-session[1369]: Disconnected from invalid user admin 192.168.100.20 port 44062 [preauth]
+2026-10-07T03:20:48.606718+00:00 target-ubuntu sshd-session[1373]: Invalid user guest from 192.168.100.20 port 44088
+2026-10-07T03:20:48.646079+00:00 target-ubuntu sshd-session[1374]: Invalid user ubuntu from 192.168.100.20 port 44098
+2026-10-07T03:20:48.656747+00:00 target-ubuntu sshd-session[1373]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-07T03:20:48.673769+00:00 target-ubuntu sshd-session[1373]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20 
+2026-10-07T03:20:48.686005+00:00 target-ubuntu sshd-session[1374]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-07T03:20:48.686257+00:00 target-ubuntu sshd-session[1374]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20 
+2026-10-07T03:20:48.758831+00:00 target-ubuntu sshd-session[1371]: Invalid user admin from 192.168.100.20 port 44066
+2026-10-07T03:20:48.774584+00:00 target-ubuntu sshd-session[1371]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-07T03:20:48.774836+00:00 target-ubuntu sshd-session[1371]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20 
+2026-10-07T03:20:48.796049+00:00 target-ubuntu unix_chkpwd[1381]: password check failed for user (root)
+2026-10-07T03:20:48.797203+00:00 target-ubuntu sshd-session[1372]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=root
+2026-10-07T03:20:48.800960+00:00 target-ubuntu sshd-session[1375]: Invalid user test from 192.168.100.20 port 44110
+2026-10-07T03:20:48.821703+00:00 target-ubuntu sshd-session[1375]: pam_unix(sshd:auth): check pass; user unknown
+2026-10-07T03:20:48.821912+00:00 target-ubuntu sshd-session[1375]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20 
+2026-10-07T03:20:50.500119+00:00 target-ubuntu sshd-session[1375]: Failed password for invalid user test from 192.168.100.20 port 44110 ssh2
+2026-10-07T03:20:50.804396+00:00 target-ubuntu sshd-session[1373]: Failed password for invalid user guest from 192.168.100.20 port 44088 ssh2
+2026-10-07T03:20:50.857913+00:00 target-ubuntu sshd-session[1372]: Failed password for root from 192.168.100.20 port 44074 ssh2
+2026-10-07T03:20:50.865567+00:00 target-ubuntu sshd-session[1371]: Failed password for invalid user admin from 192.168.100.20 port 44066 ssh2
+2026-10-07T03:20:51.104811+00:00 target-ubuntu sshd-session[1374]: Failed password for invalid user ubuntu from 192.168.100.20 port 44098 ssh2
+2026-10-07T03:20:51.705502+00:00 target-ubuntu sshd-session[1375]: Connection closed by invalid user test 192.168.100.20 port 44110 [preauth]
+2026-10-07T03:20:51.705665+00:00 target-ubuntu sshd-session[1371]: Connection closed by invalid user admin 192.168.100.20 port 44066 [preauth]
+2026-10-07T03:20:52.525756+00:00 target-ubuntu sshd-session[1372]: Connection closed by authenticating user root 192.168.100.20 port 44074 [preauth]
+2026-10-07T03:20:52.932968+00:00 target-ubuntu sshd-session[1373]: Connection closed by invalid user guest 192.168.100.20 port 44088 [preauth]
+2026-10-07T03:20:53.028311+00:00 target-ubuntu sshd[1334]: srclimit_penalise: 192.168.100.20/32: activating ipv4 penalty of 19 seconds for penalty: failed authentication
+2026-10-07T03:20:53.223166+00:00 target-ubuntu sshd-session[1374]: Connection closed by invalid user ubuntu 192.168.100.20 port 44098 [preauth]
+2026-10-07T03:27:21.436559+00:00 target-ubuntu login: pam_unix(login:auth): check pass; user unknown
+2026-10-07T03:27:21.445565+00:00 target-ubuntu login: pam_unix(login:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+2026-10-07T03:27:24.308673+00:00 target-ubuntu login: FAILED LOGIN 1 FROM tty1 FOR ubuntu2026, Authentication failure
+2026-10-07T03:27:35.471630+00:00 target-ubuntu login: pam_unix(login:auth): check pass; user unknown
+2026-10-07T03:27:35.471892+00:00 target-ubuntu login: pam_unix(login:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+2026-10-07T03:27:37.855445+00:00 target-ubuntu login: FAILED LOGIN 2 FROM tty1 FOR , Authentication failure
+2026-10-07T03:28:10.081216+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-10-07T03:28:10.129728+00:00 target-ubuntu systemd-logind[1029]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-10-07T03:28:10.186942+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-10-07T03:28:10.188266+00:00 target-ubuntu systemd-logind[1029]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-10-07T03:29:52.175417+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-10-07T03:29:52.175641+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/tail -30 /var/log/auth.log
+2026-10-07T03:29:52.188229+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-10-07T04:17:01.304397+00:00 target-ubuntu CRON[1779]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-10-07T04:17:01.363724+00:00 target-ubuntu CRON[1779]: pam_unix(cron:session): session closed for user root
+2026-10-07T04:21:12.381103+00:00 target-ubuntu sshd-session[1790]: Accepted password for vboxuser from 192.168.56.1 port 60316 ssh2
+2026-10-07T04:21:12.383107+00:00 target-ubuntu sshd-session[1790]: pam_unix(sshd:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-10-07T04:21:12.398058+00:00 target-ubuntu systemd-logind[1029]: New session '4' of user 'vboxuser' with class 'user' and type 'tty'.

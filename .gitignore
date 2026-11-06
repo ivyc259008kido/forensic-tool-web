@@ -1,0 +1,6 @@
+﻿node_modules/
+uploads/
+bruteforce_result.json
+bruteforce_result.csv
+scan_result.json
+scan_result.csv

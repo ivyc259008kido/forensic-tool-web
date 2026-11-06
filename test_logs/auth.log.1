@@ -1,0 +1,213 @@
+2026-07-19T10:51:25.846319+00:00 target-ubuntu passwd[1118]: password for 'vboxuser' changed by 'root'
+2026-07-19T10:51:25.846750+00:00 target-ubuntu systemd-logind[1151]: New seat seat0.
+2026-07-19T10:51:25.846752+00:00 target-ubuntu systemd-logind[1151]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-19T10:51:25.846754+00:00 target-ubuntu systemd-logind[1151]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-19T10:51:25.846756+00:00 target-ubuntu systemd-logind[1151]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-19T10:53:53.743270+00:00 target-ubuntu login: pam_unix(login:auth): check pass; user unknown
+2026-07-19T10:53:53.743597+00:00 target-ubuntu login: pam_unix(login:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+2026-07-19T10:53:57.514755+00:00 target-ubuntu login: FAILED LOGIN 1 FROM tty1 FOR \vboxuser, Authentication failure
+2026-07-19T10:55:57.589604+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-19T10:55:57.638353+00:00 target-ubuntu systemd-logind[1151]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-07-19T10:55:57.712671+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-19T10:55:57.718716+00:00 target-ubuntu systemd-logind[1151]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-07-19T10:59:11.499230+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-19T10:59:11.507144+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2026-07-19T10:59:11.508898+00:00 target-ubuntu systemd-logind[1151]: The system will power off now!
+2026-07-19T10:59:11.549050+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-19T10:59:11.551224+00:00 target-ubuntu systemd-logind[1151]: System is powering down.
+2026-07-19T10:59:11.586672+00:00 target-ubuntu login: pam_unix(login:session): session closed for user vboxuser
+2026-07-21T07:57:52.008354+00:00 target-ubuntu systemd-logind[1019]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-21T07:57:52.008356+00:00 target-ubuntu systemd-logind[1019]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-21T07:57:52.008372+00:00 target-ubuntu systemd-logind[1019]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-21T07:57:52.008374+00:00 target-ubuntu systemd-logind[1019]: New seat seat0.
+2026-07-21T08:00:30.467109+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T08:00:30.524492+00:00 target-ubuntu systemd-logind[1019]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-07-21T08:00:30.592340+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T08:00:30.592410+00:00 target-ubuntu systemd-logind[1019]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-07-21T08:01:58.052375+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:01:58.054472+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-21T08:02:06.590839+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:03:00.590064+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:03:00.607423+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt install openssh-server -y
+2026-07-21T08:03:08.447039+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:04:50.443717+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:04:50.444464+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2026-07-21T08:04:50.454589+00:00 target-ubuntu systemd-logind[1019]: The system will power off now!
+2026-07-21T08:04:50.501474+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:04:50.515813+00:00 target-ubuntu systemd-logind[1019]: System is powering down.
+2026-07-21T08:04:50.556033+00:00 target-ubuntu login: pam_unix(login:session): session closed for user vboxuser
+2026-07-21T08:06:05.474609+00:00 target-ubuntu systemd-logind[1017]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-21T08:06:05.474612+00:00 target-ubuntu systemd-logind[1017]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-21T08:06:05.474614+00:00 target-ubuntu systemd-logind[1017]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-21T08:06:05.474615+00:00 target-ubuntu systemd-logind[1017]: New seat seat0.
+2026-07-21T08:06:26.771144+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T08:06:26.787839+00:00 target-ubuntu systemd-logind[1017]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-07-21T08:06:26.855553+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T08:06:26.857898+00:00 target-ubuntu systemd-logind[1017]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-07-21T08:07:14.494532+00:00 target-ubuntu unix_chkpwd[1445]: password check failed for user (vboxuser)
+2026-07-21T08:07:14.495148+00:00 target-ubuntu sudo: pam_unix(sudo:auth): authentication failure; logname=vboxuser uid=1000 euid=0 tty=/dev/tty1 ruser=vboxuser rhost=  user=vboxuser
+2026-07-21T08:07:24.917918+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:07:24.918071+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt update
+2026-07-21T08:07:38.931388+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:09:55.179304+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:09:55.179707+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/apt install openssh-server -y
+2026-07-21T08:10:44.639452+00:00 target-ubuntu (systemd-stdio-bridge): pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T08:10:44.766719+00:00 target-ubuntu (sd-pam): pam_unix(login:session): session closed for user vboxuser
+2026-07-21T08:10:51.322636+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:12:17.879091+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:12:17.897581+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/systemctl enable ssh
+2026-07-21T08:12:19.156517+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:12:44.167173+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:12:44.167334+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/systemctl start ssh
+2026-07-21T08:12:44.265665+00:00 target-ubuntu sshd[2331]: Server listening on 0.0.0.0 port 22.
+2026-07-21T08:12:44.265912+00:00 target-ubuntu sshd[2331]: Server listening on :: port 22.
+2026-07-21T08:12:44.271551+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:13:21.498310+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:13:21.498533+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/systemctl statys ssh
+2026-07-21T08:13:21.507245+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:16:31.179948+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:16:31.201330+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/systemctl status ssh
+2026-07-21T08:16:31.221706+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:17:01.797253+00:00 target-ubuntu CRON[2369]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-21T08:17:01.824851+00:00 target-ubuntu CRON[2369]: pam_unix(cron:session): session closed for user root
+2026-07-21T08:19:08.482763+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:19:08.483379+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2026-07-21T08:19:08.494865+00:00 target-ubuntu systemd-logind[1017]: The system will power off now!
+2026-07-21T08:19:08.560541+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:19:08.579530+00:00 target-ubuntu systemd-logind[1017]: System is powering down.
+2026-07-21T08:19:08.643435+00:00 target-ubuntu login: pam_unix(login:session): session closed for user vboxuser
+2026-07-21T08:21:18.910550+00:00 target-ubuntu systemd-logind[1020]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-21T08:21:18.910555+00:00 target-ubuntu systemd-logind[1020]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-21T08:21:18.910557+00:00 target-ubuntu systemd-logind[1020]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-21T08:21:18.910560+00:00 target-ubuntu systemd-logind[1020]: New seat seat0.
+2026-07-21T08:23:15.836337+00:00 target-ubuntu sshd[1298]: Server listening on 0.0.0.0 port 22.
+2026-07-21T08:23:15.836461+00:00 target-ubuntu sshd[1298]: Server listening on :: port 22.
+2026-07-21T08:23:30.802507+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T08:23:30.825409+00:00 target-ubuntu systemd-logind[1020]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-07-21T08:23:30.945086+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T08:23:30.947213+00:00 target-ubuntu systemd-logind[1020]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-07-21T08:29:57.893941+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:29:57.894275+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/00-installer-config.yaml
+2026-07-21T08:51:03.371572+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:55:25.933243+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:55:25.946358+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-21T08:55:26.216324+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T08:59:05.191365+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T08:59:05.191576+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/00-installer-config.yaml
+2026-07-21T09:01:10.586998+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T09:01:32.571284+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T09:01:32.571365+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-21T09:01:32.691780+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T09:03:05.840375+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T09:03:05.840504+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/nano /etc/netplan/00-installer-config.yaml
+2026-07-21T09:06:36.113386+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T09:06:52.184281+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T09:06:52.184415+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/netplan apply
+2026-07-21T09:06:52.803576+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T09:12:35.477119+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T09:12:35.483520+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2026-07-21T09:12:35.485255+00:00 target-ubuntu systemd-logind[1020]: The system will power off now!
+2026-07-21T09:12:35.506889+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T09:12:35.546774+00:00 target-ubuntu systemd-logind[1020]: System is powering down.
+2026-07-21T09:12:35.593266+00:00 target-ubuntu login: pam_unix(login:session): session closed for user vboxuser
+2026-07-21T13:43:18.712903+00:00 target-ubuntu systemd-logind[1021]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-21T13:43:18.712905+00:00 target-ubuntu systemd-logind[1021]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-21T13:43:18.712908+00:00 target-ubuntu systemd-logind[1021]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-21T13:43:18.712909+00:00 target-ubuntu systemd-logind[1021]: New seat seat0.
+2026-07-21T13:45:16.801788+00:00 target-ubuntu sshd[1309]: Server listening on 0.0.0.0 port 22.
+2026-07-21T13:45:16.801893+00:00 target-ubuntu sshd[1309]: Server listening on :: port 22.
+2026-07-21T13:45:38.918847+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T13:45:38.938551+00:00 target-ubuntu systemd-logind[1021]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-07-21T13:45:39.006603+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-21T13:45:39.007868+00:00 target-ubuntu systemd-logind[1021]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-07-21T13:54:50.222921+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-21T13:54:50.232381+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2026-07-21T13:54:50.232661+00:00 target-ubuntu systemd-logind[1021]: The system will power off now!
+2026-07-21T13:54:50.256538+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-21T13:54:50.280290+00:00 target-ubuntu systemd-logind[1021]: System is powering down.
+2026-07-21T13:54:50.333485+00:00 target-ubuntu login: pam_unix(login:session): session closed for user vboxuser
+2026-07-28T08:54:26.501646+00:00 target-ubuntu systemd-logind[1023]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-07-28T08:54:26.501649+00:00 target-ubuntu systemd-logind[1023]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-07-28T08:54:26.501651+00:00 target-ubuntu systemd-logind[1023]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-07-28T08:54:26.501653+00:00 target-ubuntu systemd-logind[1023]: New seat seat0.
+2026-07-28T08:56:24.323989+00:00 target-ubuntu sshd[1362]: Server listening on 0.0.0.0 port 22.
+2026-07-28T08:56:24.326736+00:00 target-ubuntu sshd[1362]: Server listening on :: port 22.
+2026-07-28T08:56:57.817991+00:00 target-ubuntu login: pam_unix(login:auth): check pass; user unknown
+2026-07-28T08:56:57.818317+00:00 target-ubuntu login: pam_unix(login:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+2026-07-28T08:57:00.482119+00:00 target-ubuntu login: FAILED LOGIN 1 FROM tty1 FOR ubuntu2026, Authentication failure
+2026-07-28T08:57:14.996465+00:00 target-ubuntu login: pam_unix(login:auth): check pass; user unknown
+2026-07-28T08:57:14.996697+00:00 target-ubuntu login: pam_unix(login:auth): authentication failure; logname= uid=0 euid=0 tty=/dev/tty1 ruser= rhost= 
+2026-07-28T08:57:17.754663+00:00 target-ubuntu login: FAILED LOGIN 2 FROM tty1 FOR , Authentication failure
+2026-07-28T08:59:05.306800+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-28T08:59:05.348522+00:00 target-ubuntu systemd-logind[1023]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-07-28T08:59:05.432882+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-07-28T08:59:05.432969+00:00 target-ubuntu systemd-logind[1023]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-07-28T09:03:16.489872+00:00 target-ubuntu unix_chkpwd[1545]: password check failed for user (vboxuser)
+2026-07-28T09:03:16.490794+00:00 target-ubuntu sudo: pam_unix(sudo:auth): authentication failure; logname=vboxuser uid=1000 euid=0 tty=/dev/tty1 ruser=vboxuser rhost=  user=vboxuser
+2026-07-28T09:03:38.176836+00:00 target-ubuntu unix_chkpwd[1546]: password check failed for user (vboxuser)
+2026-07-28T09:05:41.146224+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-28T09:05:41.154088+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/adduser testuser
+2026-07-28T09:05:41.328182+00:00 target-ubuntu groupadd[1558]: group added to /etc/group: name=testuser, GID=1001
+2026-07-28T09:05:41.334951+00:00 target-ubuntu groupadd[1558]: group added to /etc/gshadow: name=testuser
+2026-07-28T09:05:41.335499+00:00 target-ubuntu groupadd[1558]: new group: name=testuser, GID=1001
+2026-07-28T09:05:41.375597+00:00 target-ubuntu useradd[1563]: new user: name=testuser, UID=1001, GID=1001, home=/home/testuser, shell=/bin/bash, from=/dev/pts/0
+2026-07-28T09:07:18.965461+00:00 target-ubuntu passwd[1574]: pam_unix(passwd:chauthtok): password changed for testuser
+2026-07-28T09:08:04.448747+00:00 target-ubuntu chfn[1582]: changed user 'testuser' information
+2026-07-28T09:08:08.641349+00:00 target-ubuntu gpasswd[1589]: members of group users set by root to vboxuser,testuser
+2026-07-28T09:08:08.644134+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-28T09:15:49.700945+00:00 target-ubuntu sshd-session[1611]: Received disconnect from 192.168.100.20 port 53662:11: Bye Bye [preauth]
+2026-07-28T09:15:49.701140+00:00 target-ubuntu sshd-session[1611]: Disconnected from authenticating user testuser 192.168.100.20 port 53662 [preauth]
+2026-07-28T09:15:50.161082+00:00 target-ubuntu sshd-session[1618]: Connection closed by authenticating user testuser 192.168.100.20 port 53700 [preauth]
+2026-07-28T09:15:50.467479+00:00 target-ubuntu unix_chkpwd[1625]: password check failed for user (testuser)
+2026-07-28T09:15:50.475071+00:00 target-ubuntu unix_chkpwd[1626]: password check failed for user (testuser)
+2026-07-28T09:15:50.484943+00:00 target-ubuntu unix_chkpwd[1629]: password check failed for user (testuser)
+2026-07-28T09:15:50.490841+00:00 target-ubuntu sshd-session[1614]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=testuser
+2026-07-28T09:15:50.491202+00:00 target-ubuntu sshd-session[1613]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=testuser
+2026-07-28T09:15:50.493785+00:00 target-ubuntu unix_chkpwd[1628]: password check failed for user (testuser)
+2026-07-28T09:15:50.494158+00:00 target-ubuntu sshd-session[1616]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=testuser
+2026-07-28T09:15:50.494608+00:00 target-ubuntu sshd-session[1617]: pam_unix(sshd:auth): authentication failure; logname= uid=0 euid=0 tty=ssh ruser= rhost=192.168.100.20  user=testuser
+2026-07-28T09:15:50.705590+00:00 target-ubuntu sshd-session[1615]: Accepted password for testuser from 192.168.100.20 port 53692 ssh2
+2026-07-28T09:15:50.706383+00:00 target-ubuntu sshd-session[1615]: pam_unix(sshd:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-28T09:15:50.714676+00:00 target-ubuntu systemd-logind[1023]: New session '3' of user 'testuser' with class 'user' and type 'tty'.
+2026-07-28T09:15:50.763270+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user testuser(uid=1001) by testuser(uid=0)
+2026-07-28T09:15:50.764768+00:00 target-ubuntu systemd-logind[1023]: New session '4' of user 'testuser' with class 'manager' and type 'unspecified'.
+2026-07-28T09:15:51.426114+00:00 target-ubuntu sshd-session[1709]: Connection closed by 192.168.100.20 port 53692
+2026-07-28T09:15:51.426364+00:00 target-ubuntu sshd-session[1615]: pam_unix(sshd:session): session closed for user testuser
+2026-07-28T09:15:51.432291+00:00 target-ubuntu systemd-logind[1023]: Session 3 logged out. Waiting for processes to exit.
+2026-07-28T09:15:51.433581+00:00 target-ubuntu systemd-logind[1023]: Removed session 3.
+2026-07-28T09:15:51.909871+00:00 target-ubuntu sshd-session[1614]: Failed password for testuser from 192.168.100.20 port 53676 ssh2
+2026-07-28T09:15:52.380038+00:00 target-ubuntu sshd-session[1616]: Failed password for testuser from 192.168.100.20 port 53694 ssh2
+2026-07-28T09:15:52.432635+00:00 target-ubuntu sshd-session[1614]: Connection closed by authenticating user testuser 192.168.100.20 port 53676 [preauth]
+2026-07-28T09:15:52.505225+00:00 target-ubuntu sshd-session[1616]: Connection closed by authenticating user testuser 192.168.100.20 port 53694 [preauth]
+2026-07-28T09:15:52.553992+00:00 target-ubuntu sshd-session[1617]: Failed password for testuser from 192.168.100.20 port 53696 ssh2
+2026-07-28T09:15:52.803162+00:00 target-ubuntu sshd-session[1613]: Failed password for testuser from 192.168.100.20 port 53672 ssh2
+2026-07-28T09:15:54.790298+00:00 target-ubuntu sshd-session[1613]: Connection closed by authenticating user testuser 192.168.100.20 port 53672 [preauth]
+2026-07-28T09:15:54.795336+00:00 target-ubuntu sshd[1362]: srclimit_penalise: 192.168.100.20/32: activating ipv4 penalty of 16 seconds for penalty: failed authentication
+2026-07-28T09:15:54.859045+00:00 target-ubuntu sshd-session[1617]: Connection closed by authenticating user testuser 192.168.100.20 port 53696 [preauth]
+2026-07-28T09:16:01.722979+00:00 target-ubuntu systemd-logind[1023]: Removed session 4.
+2026-07-28T09:17:01.230516+00:00 target-ubuntu CRON[1726]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-07-28T09:17:01.239723+00:00 target-ubuntu CRON[1726]: pam_unix(cron:session): session closed for user root
+2026-07-28T09:38:27.741599+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-28T09:38:27.749058+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/bin/tail -n 50 /var/log/auth.log
+2026-07-28T09:38:27.769239+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-28T09:43:18.424371+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-07-28T09:43:18.424831+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/shutdown -h now
+2026-07-28T09:43:18.431771+00:00 target-ubuntu systemd-logind[1023]: The system will power off now!
+2026-07-28T09:43:18.463913+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-07-28T09:43:18.493714+00:00 target-ubuntu systemd-logind[1023]: System is powering down.
+2026-07-28T09:43:18.544435+00:00 target-ubuntu login: pam_unix(login:session): session closed for user vboxuser
+2026-09-02T03:41:11.980086+00:00 target-ubuntu systemd-logind[1023]: Watching system buttons on /dev/input/event0 (Power Button)
+2026-09-02T03:41:11.980096+00:00 target-ubuntu systemd-logind[1023]: Watching system buttons on /dev/input/event1 (Sleep Button)
+2026-09-02T03:41:11.980098+00:00 target-ubuntu systemd-logind[1023]: New seat seat0.
+2026-09-02T03:41:11.980142+00:00 target-ubuntu systemd-logind[1023]: Watching system buttons on /dev/input/event2 (AT Translated Set 2 keyboard)
+2026-09-02T03:43:11.287460+00:00 target-ubuntu sshd[1323]: Server listening on 0.0.0.0 port 22.
+2026-09-02T03:43:11.287570+00:00 target-ubuntu sshd[1323]: Server listening on :: port 22.
+2026-09-02T03:55:46.956146+00:00 target-ubuntu login: pam_unix(login:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-09-02T03:55:47.009416+00:00 target-ubuntu systemd-logind[1023]: New session '1' of user 'vboxuser' with class 'user' and type 'tty'.
+2026-09-02T03:55:47.054585+00:00 target-ubuntu (systemd): pam_unix(systemd-user:session): session opened for user vboxuser(uid=1000) by vboxuser(uid=0)
+2026-09-02T03:55:47.054665+00:00 target-ubuntu systemd-logind[1023]: New session '2' of user 'vboxuser' with class 'manager' and type 'unspecified'.
+2026-09-02T04:08:42.195161+00:00 target-ubuntu sudo: pam_unix(sudo:session): session opened for user root(uid=0) by vboxuser(uid=1000)
+2026-09-02T04:08:42.201694+00:00 target-ubuntu sudo: vboxuser : TTY=/dev/tty1 ; PWD=/home/vboxuser ; USER=root ; COMMAND=/usr/sbin/dpkg-reconfigure keyboard-configuration
+2026-09-02T04:12:55.047418+00:00 target-ubuntu sudo: pam_unix(sudo:session): session closed for user root
+2026-09-02T04:17:01.242026+00:00 target-ubuntu CRON[6021]: pam_unix(cron:session): session opened for user root(uid=0) by root(uid=0)
+2026-09-02T04:17:01.248472+00:00 target-ubuntu CRON[6021]: pam_unix(cron:session): session closed for user root

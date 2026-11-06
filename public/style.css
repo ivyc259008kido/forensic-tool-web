@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", "Yu Gothic", sans-serif;
+  background: linear-gradient(135deg, #f6f9fc 0%, #e8f1fc 100%);
+  color: #10233f;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/*
+  ページ全体のタイトル
+*/
+.page-header {
+  width: min(1200px, calc(100% - 48px));
+  margin: 56px auto 32px;
+}
+
+.page-header h1 {
+  margin: 0 0 8px;
+  color: #0b3d91;
+  font-size: 36px;
+  line-height: 1.3;
+}
+
+.page-header p {
+  margin: 0;
+  color: #5b6b84;
+  font-size: 16px;
+  line-height: 1.7;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/*
+  2つの白いコンテナを横並びにする親要素
+*/
+.container-grid {
+  width: min(1200px, calc(100% - 48px));
+  margin: 80px auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+
+  align-items: stretch;
+}
+
+/*
+  SSHログ解析・ファイル解析それぞれの白いコンテナ
+*/
+.tool-card {
+  min-width: 0;
+  width: 100%;
+  padding: 40px;
+
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(11, 61, 145, 0.08);
+
+  /*
+    カード内を縦方向に配置する
+  */
+  display: flex;
+  flex-direction: column;
+
+  /*
+    長い文字がカードからはみ出さないようにする
+  */
+  overflow: hidden;
+}
+
+/*
+  カード内の見出し
+*/
+.tool-card h2 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #0b3d91;
+  font-size: 28px;
+  line-height: 1.4;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/*
+  説明文
+
+  左側は1行、右側は2行になるため、
+  min-heightで2行分の高さを確保する
+*/
+p.subtitle {
+  min-height: 58px;
+
+  color: #5b6b84;
+  font-size: 16px;
+  line-height: 1.8;
+
+  margin-top: 0;
+  margin-bottom: 32px;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/*
+  フォーム
+  flex: 1で左右のフォーム領域の高さをそろえる
+*/
+.tool-card form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  min-width: 0;
+  gap: 16px;
+}
+
+/*
+  ファイル選択・フォルダ選択のラベル
+*/
+.tool-card form > label,
+.file-label {
+  display: block;
+
+  min-height: 29px;
+
+  color: #10233f;
+  line-height: 1.8;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/*
+  ファイル選択欄
+*/
+input[type="file"] {
+  display: block;
+
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+
+  padding: 16px;
+
+  border: 2px dashed #bfdbfe;
+  border-radius: 12px;
+  background: #f6f9fc;
+
+  font-family: inherit;
+  font-size: 14px;
+  color: #10233f;
+}
+
+/*
+  選択したファイル・フォルダの表示
+
+  min-heightで表示領域の高さをそろえる
+*/
+.selected-files {
+  min-height: 26px;
+
+  margin: 0;
+
+  color: #5b6b84;
+  font-size: 14px;
+  line-height: 1.6;
+
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+/*
+  解析開始ボタン
+
+  margin-top: autoで左右のボタンをカード下端にそろえる
+*/
+.tool-card form button {
+  width: 100%;
+  min-width: 0;
+
+  margin-top: auto;
+  padding: 14px 24px;
+
+  background: #2f6fed;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 12px;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 700;
+
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.tool-card form button:hover {
+  background: #0b3d91;
+}
+
+.tool-card form button:focus-visible {
+  outline: 3px solid rgba(47, 111, 237, 0.35);
+  outline-offset: 3px;
+}
+
+/*
+  画面が狭い場合（スマートフォン用）
+*/
+@media (max-width: 768px) {
+  .page-header {
+    width: calc(100% - 32px);
+    margin: 32px auto 24px;
+  }
+
+  .page-header h1 {
+    font-size: 30px;
+  }
+
+  .container-grid {
+    width: calc(100% - 32px);
+    margin: 32px auto;
+
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .tool-card {
+    padding: 28px 24px;
+  }
+
+  .tool-card h2 {
+    font-size: 24px;
+  }
+
+  /*
+    スマートフォンでは説明文の高さを自動に戻す
+  */
+  p.subtitle {
+    min-height: auto;
+  }
+}

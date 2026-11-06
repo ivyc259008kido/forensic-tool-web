@@ -1,0 +1,24 @@
+SQL練習
+PosgreSQL
+OraclSQL
+
+四大命令　CRUD操作
+（クラッド操作）
+
+インサート　挿入
+セレクト　　選択
+アップデート　更新
+ディレート　　削除
+
+どれかが最初に来る
+
+INSERT　
+CREATE
+
+SELECT
+READ
+
+
+SELECT * FROM 家計簿
+WHERE 入金額 <> 0; 
+比較演算子
